@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelo Event | Roy Nelom | Professionele DJ met 30 Jaar Ervaring</title>
-    <meta name="description" content="Roy Nelom van Nelo Event - 30 jaar ervaring als allround DJ voor bedrijfsfeesten, bruiloften en meer. Specialist in R&B, Oldskool, Slowjams & Afrobeat.">
+    <title>Nelo Event | Roy Nelom | DJ + Catering | Complete Feestoplossing</title>
+    <meta name="description" content="Nelo Event - Professionele DJ met 30 jaar ervaring + Brietjes Catering voor heerlijk Surinaams eten. Alles voor uw perfecte feest!">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -326,6 +326,62 @@
             color: var(--goud);
         }
         
+        /* Catering Sectie */
+        .catering {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        
+        .catering-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(10, 10, 10, 0.8);
+            padding: 4rem 3rem;
+            border-radius: 15px;
+            border: 2px solid var(--goud);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        
+        .catering-logo {
+            max-width: 350px;
+            margin: 0 auto 2rem;
+        }
+        
+        .catering-logo img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+        }
+        
+        .catering-menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            text-align: left;
+        }
+        
+        .menu-item {
+            background-color: rgba(212, 175, 55, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--afro-oranje);
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            background-color: rgba(212, 175, 55, 0.2);
+        }
+        
+        .menu-item h4 {
+            color: var(--goud);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
         /* Muziekstijl Sectie */
         .music-styles {
             background: linear-gradient(135deg, var(--zwart) 0%, var(--grijs) 100%);
@@ -436,6 +492,19 @@
         .highlight {
             color: var(--goud);
             font-weight: 600;
+        }
+        
+        .combo-offer {
+            background-color: rgba(106, 13, 173, 0.2);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            border: 1px dashed var(--afro-paars);
+        }
+        
+        .combo-offer h3 {
+            color: var(--afro-oranje);
+            margin-bottom: 1rem;
         }
         
         .contact-methods {
@@ -618,7 +687,7 @@
                 max-width: 500px;
             }
             
-            .booking-container {
+            .booking-container, .catering-container {
                 padding: 3rem 2rem;
             }
         }
@@ -658,7 +727,7 @@
                 padding: 4rem 1.5rem;
             }
             
-            .booking-container {
+            .booking-container, .catering-container {
                 padding: 3rem 1.5rem;
             }
             
@@ -725,6 +794,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#over">Over Mij</a></li>
                 <li><a href="#diensten">Diensten</a></li>
+                <li><a href="#catering">Catering</a></li>
                 <li><a href="#muziek">Muziek</a></li>
                 <li><a href="#video">Video's</a></li>
                 <li><a href="#boekingen">Boekingen</a></li>
@@ -738,15 +808,16 @@
             <source src="https://files.catbox.moe/fflqye.webm" type="video/webm">
         </video>
         <div class="hero-content">
-            <span class="experience-badge">30 Jaar DJ Ervaring</span>
+            <span class="experience-badge">30 Jaar Ervaring</span>
             <h1>Roy Nelom</h1>
             <div class="logo">NELO EVENT</div>
-            <p class="subtitle">Professionele allround DJ voor al uw speciale gelegenheden</p>
+            <p class="subtitle">Complete feestoplossing: DJ-service + Surinaamse catering</p>
             <div class="music-genres">
                 <span class="genre-tag">R&B</span>
                 <span class="genre-tag">Oldskool</span>
                 <span class="genre-tag">Slowjams</span>
                 <span class="genre-tag">Afrobeat</span>
+                <span class="genre-tag">Surinaams Eten</span>
             </div>
         </div>
     </header>
@@ -763,7 +834,7 @@
                     <h2>Mijn Biografie</h2>
                     <p>Ik ben Roy Nelom, eigenaar van Nelo Event en al 30 jaar werkzaam als allround DJ. Mijn passie voor muziek en mensen samenbrengen heeft me gebracht waar ik nu sta - als een ervaren professional die ieder feest onvergetelijk maakt.</p>
                     <p>In mijn carrière heb ik op diverse evenementen gedraaid, van bedrijfsfeesten en personeelsfeesten tot huwelijksfeesten en verjaardagen. Mijn sociale aard en professionele aanpak zorgen altijd voor een geslaagd feest.</p>
-                    <p>Bij Nelo Event geloven we dat een goed feest draait om sfeer, verbinding en natuurlijk de juiste muziek. Met mijn uitgebreide collectie van R&B, Oldskool, Slowjams en Afrobeat zorg ik voor een mix die iedereen aanspreekt.</p>
+                    <p>Met Nelo Event bied ik nu een complete oplossing: niet alleen de beste muziek, maar via <strong>Brietjes Catering</strong> ook heerlijk Surinaams eten voor uw feest. Alles onder één dak voor een perfecte beleving!</p>
                     <p class="signature">Roy Nelom</p>
                 </div>
             </div>
@@ -801,6 +872,57 @@
                         <h3>Verjaardagen</h3>
                         <p>Of het nu om een 25e of 50e verjaardag gaat, ik zorg voor de perfecte sfeer met muziek die bij de jarige en gasten past.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Catering Sectie -->
+    <section id="catering" class="catering">
+        <div class="section-container">
+            <div class="catering-container">
+                <h2 class="section-title">Brietjes Catering</h2>
+                <div class="catering-logo">
+                    <img src="https://files.catbox.moe/brq374.png" alt="Brietjes Catering - Lekker Surinaams Eten">
+                </div>
+                <p>Naast professionele DJ-diensten bieden wij via <strong>Brietjes Catering</strong> ook heerlijk Surinaams eten voor uw feest of evenement. Een complete feestoplossing onder één dak!</p>
+                
+                <div class="catering-menu">
+                    <div class="menu-item">
+                        <h4>Surinaamse Bitterballen</h4>
+                        <p>Krokante bitterballen met een heerlijke Surinaamse twist, geserveerd met pittige saus.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Roti met Kip</h4>
+                        <p>Vers gebakken roti gevuld met malse kip, aardappelen en groenten in een kruidige saus.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pom</h4>
+                        <p>Traditionele Surinaamse ovenschotel met tayerwortel en kip.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Saoto Soep</h4>
+                        <p>Hartige kippensoep met verschillende toppings en kroepoek.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Bara</h4>
+                        <p>Luchtig gefrituurde deegsnacks, perfect als bijgerecht of hapje.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Boeuf</h4>
+                        <p>Pittige Surinaamse rundvlees stoofpot geserveerd met rijst.</p>
+                    </div>
+                </div>
+
+                <p><strong>Onze catering is beschikbaar voor alle soorten evenementen:</strong> bruiloften, bedrijfsfeesten, verjaardagen en meer. Vraag naar onze complete pakketten!</p>
+                
+                <div class="contact-methods" style="margin-top: 2rem;">
+                    <a href="tel:+31645237930" class="contact-btn phone-btn">
+                        <i class="fas fa-phone contact-icon"></i> +31 645 237 930
+                    </a>
+                    <a href="mailto:catering@neloevent.nl" class="contact-btn email-btn">
+                        <i class="fas fa-envelope contact-icon"></i> Catering Info
+                    </a>
                 </div>
             </div>
         </div>
@@ -866,10 +988,14 @@
             <div class="booking-container">
                 <h2>Boek Nelo Event</h2>
                 <div class="booking-info">
-                    <p>Met 30 jaar ervaring weet ik precies hoe ik jouw evenement muzikaal onvergetelijk kan maken. Laten we samenwerken om de perfecte sfeer te creëren voor jouw speciale gelegenheid.</p>
+                    <p>Met 30 jaar ervaring weet ik precies hoe ik jouw evenement muzikaal onvergetelijk kan maken. En met Brietjes Catering zorgen we ook voor heerlijk Surinaams eten!</p>
                     <p><span class="highlight">Boekingen zijn mogelijk van maandag tot zondag vanaf 13:00.</span></p>
                     <p><span class="highlight">In de ochtend zijn alleen boekingen mogelijk op zaterdag en zondag.</span></p>
-                    <p>Neem gerust contact op voor een vrijblijvend gesprek over jouw evenement.</p>
+                    
+                    <div class="combo-offer">
+                        <h3>Combinatieaanbieding!</h3>
+                        <p>Boek zowel DJ-services als catering en ontvang 10% korting op het totaalbedrag! Perfect voor bruiloften en grote feesten.</p>
+                    </div>
                 </div>
                 <div class="contact-methods">
                     <a href="tel:+31645237930" class="contact-btn phone-btn">
@@ -891,7 +1017,7 @@
         <div class="footer-container">
             <div class="footer-col">
                 <h3>Nelo Event</h3>
-                <p>Roy Nelom - 30 jaar ervaring als allround DJ voor al uw speciale gelegenheden.</p>
+                <p>Roy Nelom - 30 jaar ervaring als allround DJ en catering service voor al uw speciale gelegenheden.</p>
                 <div class="social-links">
                     <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -905,20 +1031,19 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#over">Over Mij</a></li>
                     <li><a href="#diensten">Diensten</a></li>
+                    <li><a href="#catering">Catering</a></li>
                     <li><a href="#muziek">Muziekstijl</a></li>
-                    <li><a href="#video">Video's</a></li>
                     <li><a href="#boekingen">Boekingen</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>Muziekstijlen</h3>
+                <h3>Diensten</h3>
                 <ul class="footer-links">
-                    <li><a href="#">R&B</a></li>
-                    <li><a href="#">Oldskool</a></li>
-                    <li><a href="#">Slowjams</a></li>
-                    <li><a href="#">Afrobeat</a></li>
-                    <li><a href="#">Top 40</a></li>
-                    <li><a href="#">House</a></li>
+                    <li><a href="#">DJ Service</a></li>
+                    <li><a href="#">Surinaamse Catering</a></li>
+                    <li><a href="#">Bruiloften</a></li>
+                    <li><a href="#">Bedrijfsfeesten</a></li>
+                    <li><a href="#">Combinatiepakketten</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -926,13 +1051,14 @@
                 <ul class="footer-links">
                     <li><a href="tel:+31645237930">+31 645 237 930</a></li>
                     <li><a href="mailto:info@neloevent.nl">info@neloevent.nl</a></li>
-                    <li>KVK: [Voeg hier uw KVK nummer in]</li>
-                    <li>BTW: [Voeg hier uw BTW nummer in]</li>
+                    <li><a href="mailto:catering@neloevent.nl">catering@neloevent.nl</a></li>
+                    <li>KVK: 87872420</li>
+                    <li>BTW: NL000053763971</li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2023 Nelo Event - Roy Nelom. Alle rechten voorbehouden. | Ontworpen met <i class="fas fa-heart" style="color: var(--rood);"></i> voor muziek
+            &copy; 2023 Nelo Event - Roy Nelom. Alle rechten voorbehouden. | Ontworpen met <i class="fas fa-heart" style="color: var(--rood);"></i> voor muziek & eten
         </div>
     </footer>
     
