@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ NELO | Premium DJ Experience | 35 Jaar Vakmanschap</title>
+    <meta name="description" content="DJ NELO - 35 jaar ervaring in het creëren van magische muzikale momenten. Boek nu voor een onvergetelijke feestervaring met persoonlijke aandacht.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --goud: #D4AF37;
+            --zwart: #0A0A0A;
+            --wit: #F8F8F8;
+            --blauw: #1E3A8A;
+            --rood: #BE123C;
+            --grijs: #333333;
+            --licht-grijs: #E5E5E5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--zwart);
+            color: var(--wit);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        
+        /* Header Styling */
+        header {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .banner-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.8) 100%);
+            z-index: 2;
+            padding: 0 20px;
+        }
+        
+        .hero-content h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: 1rem;
+            color: var(--wit);
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            line-height: 1.1;
+        }
+        
+        .hero-content p {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            font-weight: 300;
+        }
+        
+        .experience-badge {
+            display: inline-block;
+            background-color: var(--goud);
+            color: var(--zwart);
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        /* Navigatie */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(10, 10, 10, 0.95);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        nav.scrolled {
+            padding: 0.8rem 0;
+            background-color: rgba(10, 10, 10, 0.98);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo-nav {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--goud);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--wit);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--goud);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: var(--goud);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--wit);
+            font-size: 1.8rem;
+        }
+        
+        /* Sectie Styling */
+        section {
+            padding: 6rem 2rem;
+        }
+        
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            margin-bottom: 4rem;
+            position: relative;
+            color: var(--wit);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, var(--goud), var(--rood));
+        }
+        
+        /* Over Sectie */
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+        
+        .about-img {
+            flex: 1;
+            position: relative;
+            min-width: 300px;
+        }
+        
+        .about-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 20px 20px 0px rgba(212, 175, 55, 0.2);
+            transition: transform 0.5s ease;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.02);
+        }
+        
+        .about-text {
+            flex: 2;
+        }
+        
+        .about-text h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--goud);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+            color: var(--goud);
+            margin-top: 2rem;
+        }
+        
+        /* Muziekstijl Sectie */
+        .music-styles {
+            background-color: var(--grijs);
+        }
+        
+        .styles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .style-card {
+            background-color: var(--zwart);
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .style-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .style-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--goud);
+        }
+        
+        .style-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--wit);
+        }
+        
+        /* Evenementen Sectie */
+        .events {
+            background-color: var(--zwart);
+        }
+        
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .event-card {
+            background-color: var(--grijs);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.4s ease;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .event-img {
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .event-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .event-card:hover .event-img img {
+            transform: scale(1.05);
+        }
+        
+        .event-info {
+            padding: 2rem;
+        }
+        
+        .event-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--goud);
+        }
+        
+        .event-date {
+            display: inline-block;
+            background-color: var(--rood);
+            color: var(--wit);
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--grijs);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background-color: var(--zwart);
+            padding: 2rem;
+            border-radius: 10px;
+            position: relative;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(212, 175, 55, 0.1);
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+            border: 2px solid var(--goud);
+        }
+        
+        .author-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            color: var(--goud);
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--licht-grijs);
+        }
+        
+        /* Video Sectie */
+        .gallery {
+            background-color: var(--zwart);
+        }
+        
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .video-wrapper {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+            color: var(--wit);
+        }
+        
+        .video-overlay h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Boekingen Sectie */
+        .booking {
+            background: linear-gradient(135deg, var(--grijs) 0%, var(--zwart) 100%);
+        }
+        
+        .booking-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(10, 10, 10, 0.7);
+            padding: 4rem 3rem;
+            border-radius: 15px;
+            border: 1px solid var(--goud);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        
+        .booking-container h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 2rem;
+            color: var(--goud);
+        }
+        
+        .booking-info {
+            margin-bottom: 2.5rem;
+        }
+        
+        .booking-info p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight {
+            color: var(--goud);
+            font-weight: 600;
+        }
+        
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            min-width: 220px;
+            justify-content: center;
+        }
+        
+        .phone-btn {
+            background-color: var(--goud);
+            color: var(--zwart);
+        }
+        
+        .phone-btn:hover {
+            background-color: #e6c04d;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: var(--wit);
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .email-btn {
+            background-color: var(--rood);
+            color: var(--wit);
+        }
+        
+        .email-btn:hover {
+            background-color: #d11a45;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(190, 18, 60, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--zwart);
+            padding: 5rem 0 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--goud);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--rood);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--licht-grijs);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--goud);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--goud);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--goud);
+            color: var(--zwart);
+            transform: translateY(-3px);
+        }
+        
+        .newsletter p {
+            margin-bottom: 1.5rem;
+            color: var(--licht-grijs);
+        }
+        
+        .newsletter-form {
+            display: flex;
+        }
+        
+        .newsletter-input {
+            flex: 1;
+            padding: 0.8rem 1rem;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            background-color: var(--grijs);
+            color: var(--wit);
+        }
+        
+        .newsletter-btn {
+            padding: 0 1.5rem;
+            background-color: var(--goud);
+            color: var(--zwart);
+            border: none;
+            border-radius: 0 50px 50px 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-btn:hover {
+            background-color: #e6c04d;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: var(--licht-grijs);
+            font-size: 0.9rem;
+        }
+        
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--goud);
+            color: var(--zwart);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--wit);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about {
+                flex-direction: column;
+            }
+            
+            .about-img {
+                margin-bottom: 3rem;
+                max-width: 500px;
+            }
+            
+            .booking-container {
+                padding: 3rem 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--zwart);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 3rem;
+                transition: all 0.5s ease;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 1.5rem 0;
+            }
+            
+            .nav-links a {
+                font-size: 1.3rem;
+            }
+            
+            section {
+                padding: 4rem 1.5rem;
+            }
+            
+            .booking-container {
+                padding: 3rem 1.5rem;
+            }
+            
+            .contact-methods {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-btn {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .experience-badge {
+                font-size: 1rem;
+                padding: 0.6rem 1.5rem;
+            }
+            
+            .section-title {
+                margin-bottom: 3rem;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .footer-col {
+                margin-bottom: 2rem;
+            }
+            
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigatie -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-nav">DJ NELO</a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over">Over Mij</a></li>
+                <li><a href="#muziek">Muziek</a></li>
+                <li><a href="#ervaring">Ervaring</a></li>
+                <li><a href="#video">Video's</a></li>
+                <li><a href="#boekingen">Boekingen</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Header met Banner Video -->
+    <header id="home">
+        <video class="banner-video" autoplay muted loop>
+            <source src="https://files.catbox.moe/fflqye.webm" type="video/webm">
+        </video>
+        <div class="hero-content">
+            <span class="experience-badge">35 Jaar DJ Ervaring</span>
+            <h1>DJ NELO</h1>
+            <p>Creëer onvergetelijke muzikale momenten met een gepassioneerde DJ met 35 jaar ervaring</p>
+        </div>
+    </header>
+    
+    <!-- Over Sectie -->
+    <section id="over" class="about-section">
+        <div class="section-container">
+            <div class="about">
+                <div class="about-img">
+                    <img src="https://files.catbox.moe/kblsud.jpg" alt="DJ NELO">
+                </div>
+                <div class="about-text">
+                    <h2>Mijn Verhaal</h2>
+                    <p>Al 35 jaar sta ik met veel plezier achter de draaitafels. Mijn reis begon in de late jaren 80, toen ik als jonge vent voor het eerst een feestje draaide voor vrienden. Die vonk van plezier en verbinding door muziek is nooit meer weggegaan.</p>
+                    <p>In de loop der jaren heb ik mijn stijl verfijnd en ontwikkeld, altijd met aandacht voor wat het publiek beweegt. Mijn kracht? Ik luister écht naar mensen en creëer een sfeer waarin iedereen zich thuis voelt.</p>
+                    <p>Of het nu gaat om een intieme bruiloft, een bedrijfsfeest of een groot festival, ik breng altijd mijn volledige toewijding en vakkennis mee. Mijn doel is simpel: zorgen dat jouw gasten met een glimlach naar huis gaan.</p>
+                    <p class="signature">Nelo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Muziekstijl Sectie -->
+    <section id="muziek" class="music-styles">
+        <div class="section-container">
+            <h2 class="section-title">Mijn Muziekstijl</h2>
+            <div class="styles-grid">
+                <div class="style-card">
+                    <div class="style-icon"><i class="fas fa-compact-disc"></i></div>
+                    <h3>Klassiekers</h3>
+                    <p>De tijdloze hits uit de jaren 70, 80 en 90 die generaties verbinden en altijd garant staan voor dansplezier.</p>
+                </div>
+                <div class="style-card">
+                    <div class="style-icon"><i class="fas fa-headphones"></i></div>
+                    <h3>House & Dance</h3>
+                    <p>Moderne beats met diepe baslijnen en aanstekelijke melodieën voor een energieke dansvloer.</p>
+                </div>
+                <div class="style-card">
+                    <div class="style-icon"><i class="fas fa-music"></i></div>
+                    <h3>Top 40 & Pop</h3>
+                    <p>De nieuwste hits en populaire nummers die iedereen kent en mee kan zingen.</p>
+                </div>
+                <div class="style-card">
+                    <div class="style-icon"><i class="fas fa-microphone"></i></div>
+                    <h3>Op Maat Gemaakt</h3>
+                    <p>Een volledig op jouw wensen afgestemde playlist voor de perfecte sfeer op jouw evenement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Ervaring Sectie -->
+    <section id="ervaring" class="testimonials">
+        <div class="section-container">
+            <h2 class="section-title">Ervaringen</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">DJ NELO draaide op ons bedrijfsfeest en het was fantastisch! Hij had precies door welke muziek werkte voor ons team. De dansvloer was de hele avond vol. Echt een professional met gouden vingers!</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark de Vries" class="author-img">
+                        <div class="author-info">
+                            <h4>Mark de Vries</h4>
+                            <p>Directeur TechSolutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Onze bruiloft was perfect dankzij DJ NELO. Hij nam de tijd om onze muzikale wensen te begrijpen en mixte onze favoriete nummers vlekkeloos door elkaar. Onze gasten zijn nog steeds aan het napraten over het feest!</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lisa en Tom" class="author-img">
+                        <div class="author-info">
+                            <h4>Lisa & Tom</h4>
+                            <p>Bruidspaar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Al jaren boeken we DJ NELO voor ons jaarlijkse festival. Zijn ervaring straalt eraf en hij weet als geen ander hoe hij een crowd moet lezen en meenemen in een muzikale reis. Een absolute aanrader!</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Peter Jansen" class="author-img">
+                        <div class="author-info">
+                            <h4>Peter Jansen</h4>
+                            <p>Organisator ZomerFest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Sectie -->
+    <section id="video" class="gallery">
+        <div class="section-container">
+            <h2 class="section-title">In Actie</h2>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video controls poster="https://files.catbox.moe/kblsud.jpg">
+                        <source src="https://files.catbox.moe/bfvp3b.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <h3>Club Optreden - 2023</h3>
+                    </div>
+                </div>
+                <div class="video-wrapper">
+                    <video controls>
+                        <source src="https://files.catbox.moe/b1zt7r.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+                        <h3>Festival Optreden - Zomer 2023</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Boekingen Sectie -->
+    <section id="boekingen" class="booking">
+        <div class="section-container">
+            <div class="booking-container">
+                <h2>Boek DJ NELO</h2>
+                <div class="booking-info">
+                    <p>Met 35 jaar ervaring weet ik precies hoe ik jouw evenement onvergetelijk kan maken. Laten we samenwerken om de perfecte muzikale sfeer te creëren voor jouw speciale gelegenheid.</p>
+                    <p><span class="highlight">Boekingen zijn mogelijk van maandag tot zondag vanaf 13:00.</span></p>
+                    <p><span class="highlight">In de ochtend zijn alleen boekingen mogelijk op zaterdag en zondag.</span></p>
+                    <p>Neem gerust contact op voor een vrijblijvend gesprek over jouw evenement.</p>
+                </div>
+                <div class="contact-methods">
+                    <a href="tel:+31645237930" class="contact-btn phone-btn">
+                        <i class="fas fa-phone contact-icon"></i> +31 645 237 930
+                    </a>
+                    <a href="https://wa.me/31645237930" class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp contact-icon"></i> WhatsApp
+                    </a>
+                    <a href="mailto:boekingen@djnelo.nl" class="contact-btn email-btn">
+                        <i class="fas fa-envelope contact-icon"></i> E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>DJ NELO</h3>
+                <p>35 jaar ervaring in het creëren van onvergetelijke muzikale momenten voor elk type evenement.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Snelle Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#over">Over Mij</a></li>
+                    <li><a href="#muziek">Muziekstijl</a></li>
+                    <li><a href="#ervaring">Ervaringen</a></li>
+                    <li><a href="#video">Video's</a></li>
+                    <li><a href="#boekingen">Boekingen</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Diensten</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Bruiloften</a></li>
+                    <li><a href="#">Bedrijfsfeesten</a></li>
+                    <li><a href="#">Verjaardagen</a></li>
+                    <li><a href="#">Festivals</a></li>
+                    <li><a href="#">Club Avonden</a></li>
+                    <li><a href="#">Privé Feesten</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Nieuwsbrief</h3>
+                <p>Blijf op de hoogte van mijn laatste optredens en muzikale updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Je e-mailadres" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 DJ NELO. Alle rechten voorbehouden. | Ontworpen met <i class="fas fa-heart" style="color: var(--rood);"></i> voor muziek
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
